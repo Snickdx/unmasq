@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Welcome</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="height=device-height width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+        <style type="text/css">
+
+            html {
+                background: url(img/background.png) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                overflow-y: hidden;
+            }
+
+            body{
+                background-color: transparent;
+            }
+
+            #content{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top:10%;
+                width: 70%;
+                text-align: center;
+                padding: 20px;
+                padding-bottom: 70px;
+                background: rgb(34,34,34); /* for IE */
+                background: rgba(34,34,34,0.75);
+                border-radius: 25px;
+            }
+
+            .pink{
+                color: #EB008B;
+                font-family: 'Bilbo Swash Caps', cursive;
+                font-size: 200px;
+
+            }
+
+
+        </style>
+
+       <div id="content" class="container">
+           <h1 class="pink">Yo Pro</h1>
+           <input type="button" class="btn btn-lg btn-primary col-sm-2 col-sm-offset-5"  value="Welcome" data-toggle="modal" data-target="#myModal"/>
+       </div>
+
+
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="color: #EB008B">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Gain Access to Un-Masq'd</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" method="get" action="eventPage.html">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-4 control-label">Email</label>
+                                <div class="col-sm-7">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-4 control-label">Entry Code</label>
+                                <div class="col-sm-7">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Yo Pro Entry Code">
+                                </div>
+                            </div>
+
+                            <!--<label class="col-sm-2 control-label">Who do you Know?</label>-->
+                            <!--<div class="well row col-sm-10" style="overflow-x: scroll">-->
+                                <!--<div class="col-sm-6">-->
+                                    <!--<div class="thumbnail">-->
+                                        <!--<img src="http://placehold.it/200x200" class="img-circle">-->
+                                        <!--<div class="caption">-->
+                                            <!--<h3>John Smith</h3>-->
+                                            <!--<p>A guy at someplace</p>-->
+                                            <!--<p><a href="#" class="btn btn-primary" role="button">Select</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="col-sm-6">-->
+                                    <!--<div class="thumbnail">-->
+                                        <!--<img src="http://placehold.it/200x200" class="img-circle">-->
+                                        <!--<div class="caption">-->
+                                            <!--<h3>Bob Smith</h3>-->
+                                            <!--<p>A guy at someplace</p>-->
+                                            <!--<p><a href="#" class="btn btn-primary" role="button">Select</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                            <div class="form-group col-sm-12">
+                                <label for="inputPassword3" class="col-sm-4 control-label">Who do you know?</label>
+                                <!-- Single button -->
+                                <div class="btn-group col-sm-8">
+                                    <select class="form-control" name="reference">
+                                        <option value="">lorem</option>
+                                        <option value="">lorem</option>
+                                        <option value="">lorem</option>
+                                        <option value="">lorem</option>
+                                        <option value="">lorem</option>
+                                    </select>
+                                    <!--<button type="button" class="btn btn-default dropdown-toggle col-sm-12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                                       <!--Please select<span class="caret"></span>-->
+                                    <!--</button>-->
+                                    <!--<ul class="dropdown-menu col-sm-12">-->
+
+                                        <!--<li>-->
+                                            <!--<div class="btn btn-default col-sm-6" style="width: 100%">-->
+                                                <!--<div class="col-sm-3">-->
+                                                    <!--<img src="http://placehold.it/100x100" class="img-circle">-->
+                                                <!--</div>-->
+                                                <!--<div class="caption col-sm-9">-->
+                                                    <!--<h3>John Smith</h3>-->
+                                                    <!--<p>A guy at some place</p>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</li>-->
+
+                                        <!--<li>-->
+                                            <!--<div class="btn btn-default col-sm-6" style="width: 100%">-->
+                                                <!--<div class="col-sm-3">-->
+                                                    <!--<img src="http://placehold.it/100x100" class="img-circle">-->
+                                                <!--</div>-->
+                                                <!--<div class="caption col-sm-9">-->
+                                                    <!--<h3>Bob Smith</h3>-->
+                                                    <!--<p>A guy at some place</p>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                </div>
+                            </div>
+
+                            <div class="form-group col-sm-12" style="margin-top:40px">
+                                <div>
+                                    <button type="submit" class="btn btn-primary col-sm-offset-1 col-sm-10"  style="font-weight: bold">Enter</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- script references -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=false&extension=.js&output=embed"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
