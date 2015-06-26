@@ -22,8 +22,46 @@
                 background-size: cover;
             }
 
+            h1, h2, h3{
+                font-family: ostrich_sansmedium;
+                color: #EB008B;
+            }
+
+            h2{
+                font-family: ostrich_sansmedium;
+                color: #EB008B;
+                font-size: 20px;
+            }
+
+            @font-face {
+                font-family: 'ostrich_sansmedium';
+                src: url('fonts/ostrich-regular-webfont.eot');
+                src: url('fonts/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
+                url('fonts/ostrich-regular-webfont.woff2') format('woff2'),
+                url('fonts/ostrich-regular-webfont.woff') format('woff'),
+                url('fonts/ostrich-regular-webfont.ttf') format('truetype'),
+                url('fonts/ostrich-regular-webfont.svg#ostrich_sansmedium') format('svg');
+                font-weight: normal;
+                font-style: normal;
+
+            }
+
             body{
                 background-color: transparent;
+            }
+
+            .hero-unit {
+                background-image:url('img/mask.jpg');
+                background-size:cover;
+                height:600px;
+                color: rgba(52, 39, 39, 0.39);
+            }
+
+            .page-title{
+                text-align: center;
+                margin-top: 250px;
+                font-size: 200px;
+                opacity: 1;
             }
         </style>
 	</head>
@@ -31,49 +69,53 @@
         <!-- Wrap all page content here -->
         <div id="wrap">
 
-            <header class="masthead">
+            <header class="masthead hero-unit">
 
-                <!-- Carousel
-                ================================================== -->
-                <div id="myCarousel" class="carousel slide">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <img src="//placehold.it/1648x600">
-                      <div class="container">
-                        <!--<div class="carousel-caption">-->
-                          <!--<h2>Architectural Design</h2>-->
-                          <!--<p></p>-->
-                        <!--</div>-->
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="//placehold.it/1648x600">
-                      <div class="container">
-
-                      </div>
-                    </div>
-                    <div class="item">
-                      <img src="//placehold.it/1648x600">
-                      <div class="container">
-
-                      </div>
-                    </div>
-                  </div><!-- /.carousel-inner -->
-                  <div class="logo">UNMASQ'D</div>
-                  <!-- Controls -->
-                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                  </a>
-                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
+                <div class="container">
+                    <h1 class="page-title">UNMASQ'D</h1>
                 </div>
+
+                <!--&lt;!&ndash; Carousel-->
+                <!--================================================== &ndash;&gt;-->
+                <!--<div id="myCarousel" class="carousel slide">-->
+                  <!--&lt;!&ndash; Indicators &ndash;&gt;-->
+                  <!--<ol class="carousel-indicators">-->
+                    <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+                    <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+                    <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+                  <!--</ol>-->
+                  <!--<div class="carousel-inner">-->
+                    <!--<div class="item active">-->
+                      <!--<img src="//placehold.it/1648x600">-->
+                      <!--<div class="container">-->
+                        <!--&lt;!&ndash;<div class="carousel-caption">&ndash;&gt;-->
+                          <!--&lt;!&ndash;<h2>Architectural Design</h2>&ndash;&gt;-->
+                          <!--&lt;!&ndash;<p></p>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                      <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="item">-->
+                      <!--<img src="//placehold.it/1648x600">-->
+                      <!--<div class="container">-->
+
+                      <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="item">-->
+                      <!--<img src="//placehold.it/1648x600">-->
+                      <!--<div class="container">-->
+
+                      <!--</div>-->
+                    <!--</div>-->
+                  <!--</div>&lt;!&ndash; /.carousel-inner &ndash;&gt;-->
+                  <!--<div class="logo">UNMASQ'D</div>-->
+                  <!--&lt;!&ndash; Controls &ndash;&gt;-->
+                  <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">-->
+                    <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+                  <!--</a>-->
+                  <!--<a class="right carousel-control" href="#myCarousel" data-slide="next">-->
+                    <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+                  <!--</a>-->
+                <!--</div>-->
                 <!-- /.carousel -->
 
             </header>
@@ -109,20 +151,30 @@
 
                   <hr>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus error et exercitationem fuga impedit
-                        ipsam magni nulla, officiis quas quasi quis ratione rerum voluptatum. Accusantium, adipisci amet dignissimos
-                        ipsum quia recusandae repellat rerum vel vero? A dolore id laborum nesciunt perspiciatis porro quo velit
-                        veritatis!
+                    <p>Join us as Venetian carnival acts and creative activities are interspersed amongst Trinidad and tobago's first interactive fashion show with Trinidad and Tobago's hottest rising fashion stars.
+                        Stay for the aquatic performance and live theater.
                     </p>
 
                   <hr>
-                    <address>
-                        Yo Pro Global<br>
-                    <span id="map-input">
-                    Port-of-Spain<br>
-                    Trinidad</span><br>
-                        P: (413) 700-5999
-                    </address>
+
+                    <div class="container">
+                        <div class="col-md-6">
+                            <h2>Location</h2>
+                            <address>
+                            <span id="map-input">
+                                Kapok Hotel <br>
+                                16-18 Cotton Hill Rd <br>
+                                Port of Spain <br>
+                            </span>
+                            </address>
+                        </div>
+                        <div class="col-md-6">
+                            <h2>Date & Time:</h2>
+                            <p>Saturday July 25th, <br> 2015 5pm to 10:30pm</p>
+                        </div>
+
+                    </div>
+
 
                     <div style="margin-top:80px" id="map-canvas"></div>
 
@@ -295,6 +347,7 @@
                   <ul class="list-inline center-block">
                     <li><a href="https://www.facebook.com/yoprott"><img src="img/soc_fb.png"></a></li>
                     <li><a href="https://twitter.com/yoproglobal"><img src="img/soc_tw.png"></a></li>
+                      <li><a href="http://yoproglobal.org/"><img src="img/yopro2.png"></a></li>
                   </ul>
 
                 </div><!--/col-->

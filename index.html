@@ -8,12 +8,24 @@
         <meta name="viewport" content="height=device-height width=device-width, initial-scale=1, maximum-scale=1">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps' rel='stylesheet' type='text/css'>
     </head>
     <body>
 
         <style type="text/css">
 
+
+            @font-face {
+                font-family: 'ostrich_sansmedium';
+                src: url('fonts/ostrich-regular-webfont.eot');
+                src: url('fonts/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
+                url('fonts/ostrich-regular-webfont.woff2') format('woff2'),
+                url('fonts/ostrich-regular-webfont.woff') format('woff'),
+                url('fonts/ostrich-regular-webfont.ttf') format('truetype'),
+                url('fonts/ostrich-regular-webfont.svg#ostrich_sansmedium') format('svg');
+                font-weight: normal;
+                font-style: normal;
+
+            }
             html {
                 background: url(img/background.png) no-repeat center center fixed;
                 -webkit-background-size: cover;
@@ -21,10 +33,12 @@
                 -o-background-size: cover;
                 background-size: cover;
                 overflow-y: hidden;
+
             }
 
             body{
                 background-color: transparent;
+                font-family: ostrich_sansmedium;
             }
 
             #content{
@@ -42,9 +56,8 @@
 
             .pink{
                 color: #EB008B;
-                font-family: 'Bilbo Swash Caps', cursive;
                 font-size: 200px;
-
+                font-family: ostrich_sansmedium;
             }
 
 
@@ -105,15 +118,44 @@
                             <!--</div>-->
 
                             <div class="form-group col-sm-12">
-                                <label for="inputPassword3" class="col-sm-4 control-label">Who do you know?</label>
+                                <label for="inputPassword3" class="col-sm-4 control-label">I am a guest of:</label>
                                 <!-- Single button -->
                                 <div class="btn-group col-sm-8">
                                     <select class="form-control" name="reference">
-                                        <option value="">lorem</option>
-                                        <option value="">lorem</option>
-                                        <option value="">lorem</option>
-                                        <option value="">lorem</option>
-                                        <option value="">lorem</option>
+                                        <option>Dr. Ty Richardson</option>
+                                        <option>Brett Torina</option>
+                                        <option>Brett Torina</option>
+                                        <option>Rhion Romany</option>
+                                        <option>Calisia Gregoire</option>
+                                        <option>Ain Earle</option>
+                                        <option>Shelly Mohammed</option>
+                                        <option>Jade Brown</option>
+                                        <option>Cherylann Lutchman</option>
+                                        <option>Inga Dottin-Wiltshire</option>
+                                        <option>Joyce Lutchman</option>
+                                        <option>Tawana Richardson</option>
+                                        <option>Chamika Ward</option>
+                                        <option>Adheena Maraj</option>
+                                        <option>Melissa Ramnarine</option>
+                                        <option>Avril Thomas</option>
+                                        <option>Curssandra Chiddick</option>
+                                        <option>Indira Patel</option>
+                                        <option>Dani Pounder</option>
+                                        <option>Danielle Hackshaw</option>
+                                        <option>Kathleen Joseph</option>
+                                        <option>Elicia Mayhew</option>
+                                        <option>Daren De Bourge</option>
+                                        <option>Jill De Bourge</option>
+                                        <option>Swarzuette John</option>
+                                        <option>Kahlil Mohammed</option>
+                                        <option>Cy/ Ila Padmore</option>
+                                        <option>Nigel Celestine</option>
+                                        <option>A sponsor</option>
+                                        <option>An event partner</option>
+                                        <option>A designer</option>
+                                        <option>I heard about it from the newspaper</option>
+                                        <option>I heard about it from a friend not listed</option>
+                                        <option>No one listed.
                                     </select>
                                     <!--<button type="button" class="btn btn-default dropdown-toggle col-sm-12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
                                        <!--Please select<span class="caret"></span>-->
