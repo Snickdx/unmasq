@@ -1,0 +1,98 @@
+<div id="form" class="contact-us-form">
+    <div class="title">
+        <strong>Have any questions?</strong>
+    </div>
+    <div class="subtitle">
+        <strong>Drop us a line</strong>
+    </div>
+    <form id="callus" target="_self" onsubmit="" action="javascript: postContactToGoogle()">
+        <fieldset>
+            <label for="email">What's your email? *</label>
+            <input id="email" type="text" name="email">
+        </fieldset>
+        <fieldset>
+            <label for="reference">Who you know?</label>
+            <select  id ="reference" class="form-control" name="reference">
+                <option>Dr. Ty Richardson</option>
+                <option>Brett Torina</option>
+                <option>Brett Torina</option>
+                <option>Rhion Romany</option>
+                <option>Calisia Gregoire</option>
+                <option>Ain Earle</option>
+                <option>Shelly Mohammed</option>
+                <option>Jade Brown</option>
+                <option>Cherylann Lutchman</option>
+                <option>Inga Dottin-Wiltshire</option>
+                <option>Joyce Lutchman</option>
+                <option>Tawana Richardson</option>
+                <option>Chamika Ward</option>
+                <option>Adheena Maraj</option>
+                <option>Melissa Ramnarine</option>
+                <option>Avril Thomas</option>
+                <option>Curssandra Chiddick</option>
+                <option>Indira Patel</option>
+                <option>Dani Pounder</option>
+                <option>Danielle Hackshaw</option>
+                <option>Kathleen Joseph</option>
+                <option>Elicia Mayhew</option>
+                <option>Daren De Bourge</option>
+                <option>Jill De Bourge</option>
+                <option>Swarzuette John</option>
+                <option>Kahlil Mohammed</option>
+                <option>Cy/ Ila Padmore</option>
+                <option>Nigel Celestine</option>
+                <option>A sponsor</option>
+                <option>An event partner</option>
+                <option>A designer</option>
+                <option>Brendon Clement/Sip & Soda</option>
+                <option>I heard about it from the newspaper</option>
+                <option>I heard about it from a friend not listed</option>
+                <option>No one listed.
+            </select>
+        </fieldset>
+        <div style="text-align: right; padding-bottom: 15px;">* Required</div>
+        <div style="width: 100%; display: block; float: right;">
+            <button id="send" type="submit">
+                Contact Us
+            </button>
+        </div>
+        <div style="width: 100%; display: block; float: right; padding-top: 15px;">
+            <div class="requestSubmited" style="display:none; text-align: center;">Your request has been sent!</div>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }"
+    function postContactToGoogle(){
+        var email = $j('#email').val();
+        var reference = $j('#reference').val();
+        if ((name !== "") && (email !== "") && ((feed !== "") && (validateEmail(email)))) {
+            $j.ajax({
+                url: "https://docs.google.com/spreadsheets/d/1V9bIqgxXUlc7LyCRVmuACpY7EYoWZpLuzlArpMjDcXk/formResponse",
+                data: {"entry.1" : email, "entry.3" : reference},
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function (){
+
+                        $j('#email').val("");
+                        $j('#reference').val("");
+                        //Success message
+                    },
+                    200: function (){
+                        $j('#email').val("");
+                        $j('#reference').val("");
+                        //Success Message
+                    }
+                }
+            });
+        }
+        else {
+            //Error message
+        }
+    }
+</script>
