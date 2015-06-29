@@ -184,40 +184,41 @@
             }
 
             function postContactToGoogle(){
-                var email = $('#email').val();
-                var feed = $('#feed').val();
-                var pass = $('#passcode').val();
-
-
-                if(!validateEmail(email)){
-                    $("#alert").html("Failed, Invalid email address.").delay(2).fadeIn(300).delay(2000).fadeOut(300);
-                }else{
-                    if(!(pass.toLowerCase() == "#yoprott".toLowerCase())){
-                        $("#alert").html("Failed, Incorrect passcode!").delay(2).fadeIn(300).delay(2000).fadeOut(300);
-                    }else{
-                        $("#alert").html("Access Granted!").delay(2).fadeIn(300).delay(2000).fadeOut(300);
-                        $.ajax({
-                            url: "https://docs.google.com/forms/d/1N58x8BHEl7_svUK_EwOd-ecDr5lrEo1IIuAydMnuVQE/formResponse",
-                            data: {"entry.1722406118": email, "entry.1535709655": feed},
-                            type: "POST",
-                            dataType: "xml",
-                            statusCode: {
-                                0: function (){
-
-                                    $('#email').val("");
-                                    $('#feed').val("");
-                                    //Success message
-                                },
-                                200: function (){
-                                    $('#email').val("");
-                                    $('#feed').val("");
-                                    //Success Message
-                                }
-                            }
-                        });
-                        window.location.href = "eventPage.html";
-                    }
-                }
+//                var email = $('#email').val();
+//                var feed = $('#feed').val();
+//                var pass = $('#passcode').val();
+//
+//
+//                if(!validateEmail(email)){
+//                    $("#alert").html("Failed, Invalid email address.").delay(2).fadeIn(300).delay(2000).fadeOut(300);
+//                }else{
+//                    if(!(pass.toLowerCase() == "#yoprott".toLowerCase())){
+//                        $("#alert").html("Failed, Incorrect passcode!").delay(2).fadeIn(300).delay(2000).fadeOut(300);
+//                    }else{
+//                        $("#alert").html("Access Granted!").delay(2).fadeIn(300).delay(2000).fadeOut(300);
+//                        $.ajax({
+//                            url: "https://docs.google.com/forms/d/1N58x8BHEl7_svUK_EwOd-ecDr5lrEo1IIuAydMnuVQE/formResponse",
+//                            data: {"entry.1722406118": email, "entry.1535709655": feed},
+//                            type: "POST",
+//                            dataType: "xml",
+//                            statusCode: {
+//                                0: function (){
+//
+//                                    $('#email').val("");
+//                                    $('#feed').val("");
+//                                    //Success message
+//                                },
+//                                200: function (){
+//                                    $('#email').val("");
+//                                    $('#feed').val("");
+//                                    //Success Message
+//                                }
+//                            }
+//                        });
+//                        window.location.href = "eventPage.html";
+//                    }
+//                }
+                window.location.href = "eventPage.html";
 
             }
         </script>
