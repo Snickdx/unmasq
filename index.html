@@ -108,42 +108,50 @@
                                 <label class="col-sm-5 control-label">I am a guest of</label>
                                 <div class="col-sm-5">
                                     <select style="margin-left: 10px" class="form-control" id="feed" name="reference">
+                                    	<option disabled>──Event Supplier/Partner──</option>
                                         <option>A Designer</option>
                                         <option>A Sponsor</option>
+                                        <option>An Event Planner</option>
+                                        <option>Brendon Clement/Sip & Soda</option>
+                                        <option>Cy/ Ila Padmore</option>
+                                        <option>Kahlil Mohammed</option>
+                                        <option>Rhion Romany</option>
+                                        <option>Dei Musicale</option>
+                                        <option>Sydney Joseph</option>
+                                        <option>The Autistic Society of Trinidad and Tobago</option>
+                                        <option disabled>──Comittee Member──</option>
                                         <option>Adheena Maraj</option>
                                         <option>Ain Earle</option>
                                         <option>An event partner</option>
                                         <option>Avril Thomas</option>
-                                        <option>Brendon Clement/Sip & Soda</option>
                                         <option>Brett Torina</option>
                                         <option>Calisia Gregoire</option>
                                         <option>Chamika Ward</option>
                                         <option>Cherylann Lutchman</option>
                                         <option>Curssandra Chiddick</option>
-                                        <option>Cy/ Ila Padmore</option>
                                         <option>Dani Pounder</option>
                                         <option>Danielle Hackshaw</option>
                                         <option>Daren De Bourge</option>
                                         <option>Dr. Ty Richardson</option>
                                         <option>Elicia Mayhew</option>
-                                        <option>I heard about it from a friend not listed</option>
-                                        <option>I heard about it from the newspaper</option>
                                         <option>Indira Patel</option>
                                         <option>Inga Dottin-Wiltshire</option>
                                         <option>Jade Brown</option>
                                         <option>Jill De Bourge</option>
                                         <option>Joyce Lutchman</option>
-                                        <option>Kahlil Mohammed</option>
                                         <option>Kathleen Joseph</option>
                                         <option>Kyra Barker'</option>
                                         <option>Melissa Ramnarine</option>
                                         <option>Nigel Celestine</option>
-                                        <option>No one listed.</option>
-                                        <option>Rhion Romany</option>
                                         <option>Shelly Mohammed</option>
                                         <option>Swarzuette John</option>
                                         <option>Tawana Richardson</option>
-                                        <option>The Autistic Society of Trinidad and Tobago</option>
+                                        <option disabled>──Other──</option>
+                                        <option>I heard about it from a friend not listed</option>
+                                        <option>I heard about it on the radio</option>
+                                        <option>I saw it in the newspapers</option>
+                                        <option>I saw an advertisement on social media - Facebook, Instagram etc.</option>	
+                                        <option>None of the listed options.</option>
                                     </select>
                                 </div>
                             </div>
@@ -189,40 +197,40 @@
             }
 
             function postContactToGoogle(){
-//                var email = $('#email').val();
-//                var feed = $('#feed').val();
-//                var pass = $('#passcode').val();
-//
-//
-//                if(!validateEmail(email)){
-//                    $("#alert").html("Failed, Invalid email address.").delay(2).fadeIn(300).delay(2000).fadeOut(300);
-//                }else{
-//                    if(!(pass.toLowerCase() == "#yoprott".toLowerCase())){
-//                        $("#alert").html("Failed, Incorrect passcode!").delay(2).fadeIn(300).delay(2000).fadeOut(300);
-//                    }else{
-//                        $("#alert").html("Access Granted!").delay(2).fadeIn(300).delay(2000).fadeOut(300);
-//                        $.ajax({
-//                            url: "https://docs.google.com/forms/d/1N58x8BHEl7_svUK_EwOd-ecDr5lrEo1IIuAydMnuVQE/formResponse",
-//                            data: {"entry.1722406118": email, "entry.1535709655": feed},
-//                            type: "POST",
-//                            dataType: "xml",
-//                            statusCode: {
-//                                0: function (){
-//
-//                                    $('#email').val("");
-//                                    $('#feed').val("");
-//                                    //Success message
-//                                },
-//                                200: function (){
-//                                    $('#email').val("");
-//                                    $('#feed').val("");
-//                                    //Success Message
-//                                }
-//                            }
-//                        });
-//                        window.location.href = "eventPage.html";
-//                    }
-//                }
+               var email = $('#email').val();
+               var feed = $('#feed').val();
+               var pass = $('#passcode').val();
+
+
+               if(!validateEmail(email)){
+                   $("#alert").html("Failed, Invalid email address.").delay(2).fadeIn(300).delay(2000).fadeOut(300);
+               }else{
+                   if(!(pass.toLowerCase() == "#yoprott".toLowerCase())){
+                       $("#alert").html("Failed, Incorrect passcode!").delay(2).fadeIn(300).delay(2000).fadeOut(300);
+                   }else{
+                       $("#alert").html("Access Granted!").delay(2).fadeIn(300).delay(2000).fadeOut(300);
+                       $.ajax({
+                           url: "https://docs.google.com/forms/d/1N58x8BHEl7_svUK_EwOd-ecDr5lrEo1IIuAydMnuVQE/formResponse",
+                           data: {"entry.1722406118": email, "entry.1535709655": feed},
+                           type: "POST",
+                           dataType: "xml",
+                           statusCode: {
+                               0: function (){
+
+                                   $('#email').val("");
+                                   $('#feed').val("");
+                                   //Success message
+                               },
+                               200: function (){
+                                   $('#email').val("");
+                                   $('#feed').val("");
+                                   //Success Message
+                               }
+                           }
+                       });
+                       window.location.href = "eventPage.html";
+                   }
+               }
                 window.location.href = "eventPage.html";
 
             }
