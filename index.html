@@ -97,12 +97,12 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="passcode" class="col-sm-5 control-label">Entry Code</label>
-                                <div class="col-sm-5">
-                                    <input type="password" class="form-control" id="passcode" placeholder="Yo Pro Entry Code">
-                                </div>
-                            </div>
+                            <!--<div class="form-group">-->
+                                <!--<label for="passcode" class="col-sm-5 control-label">Entry Code</label>-->
+                                <!--<div class="col-sm-5">-->
+                                    <!--<input type="password" class="form-control" id="passcode" placeholder="Yo Pro Entry Code">-->
+                                <!--</div>-->
+                            <!--</div>-->
 
                             <div class="form-group col-sm-12">
                                 <label class="col-sm-5 control-label">I am a guest of</label>
@@ -176,9 +176,9 @@
                             </div>
                         </form>
                     </div>
-                    <div class="modal-footer" style="font-height: 15px; text-align:center">
-                         <p>Want in? Contact Us: <a href="mailto:admin@yoproglobal.org">admin@yoproglobal.org</a></p>
-                    </div>
+                    <!--<div class="modal-footer" style="font-height: 15px; text-align:center">-->
+                         <!--<p>Want in? Contact Us: <a href="mailto:admin@yoproglobal.org">admin@yoproglobal.org</a></p>-->
+                    <!--</div>-->
                 </div>
 
             </div>
@@ -206,9 +206,9 @@
                if(!validateEmail(email)){
                    $("#alert").html("Failed, Invalid email address.").delay(2).fadeIn(300).delay(2000).fadeOut(300);
                }else{
-                   if(!(pass.toLowerCase() == "#yoprott".toLowerCase())){
-                       $("#alert").html("Failed, Incorrect passcode!").delay(2).fadeIn(300).delay(2000).fadeOut(300);
-                   }else{
+//                   if(!(pass.toLowerCase() == "#yoprott".toLowerCase())){
+//                       $("#alert").html("Failed, Incorrect passcode!").delay(2).fadeIn(300).delay(2000).fadeOut(300);
+//                   }else{
                        $("#alert").html("Access Granted!").delay(2).fadeIn(300).delay(2000).fadeOut(300);
                        $.ajax({
                            url: "https://docs.google.com/forms/d/1N58x8BHEl7_svUK_EwOd-ecDr5lrEo1IIuAydMnuVQE/formResponse",
@@ -230,9 +230,8 @@
                            }
                        });
                        window.location.href = "eventPage.html";
-                   }
+                   //}
                }
-                window.location.href = "eventPage.html";
 
             }
         </script>
