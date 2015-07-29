@@ -303,9 +303,10 @@
                         <h2>Location</h2><br>
                         <address>
                             <span id="map-input">
-                                Kapok Hotel <br>
-                                16-18 Cotton Hill Rd <br>
-                                Port of Spain <br>
+                                <p>Kapok Hotel <br>
+                                    16-18 Cotton Hill Rd <br>
+                                    Port of Spain <br>
+                                </p>
                             </span>
                         </address>
                     </div>
@@ -315,22 +316,27 @@
                        <p>Sunday August 16th, <br>5:00pm to 10:00pm</p>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="container col-md-4" style="margin-bottom: 20px">
                         <h2>Tickets TTD $500.00</h2><br>
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="AU7QKM2BVJL8S">
-                            <table>
-                                <tr><td><input type="hidden" name="on0" value="Tickets">Tickets</td></tr><tr><td><select name="os0">
-                                <option value="UnMasq'd Ticket">UnMasq'd Ticket $80.00 USD</option>
-                                <option value="Ticket & Small Donation to Autism">Ticket & Small Donation to Autism $100.00 USD</option>
-                                <option value="Ticket & Large Donation to Autism">Ticket & Large Donation to Autism $150.00 USD</option>
-                                <option value="Only a Donation to Autism">Only a Donation to Autism $50.00 USD</option>
-                            </select> </td></tr>
-                            </table>
-                            <input type="hidden" name="currency_code" value="USD">
-                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
+
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="AU7QKM2BVJL8S">
+                                    <input type="hidden" name="on0" value="Tickets">
+
+
+                                    <select name="os0" class="form-control" style="width: 200px; margin-left: auto; margin-right: auto">
+                                        <option value="UnMasq'd Ticket">UnMasq'd Ticket $80.00 USD</option>
+                                        <option value="Ticket & Small Donation to Autism">Ticket & Small Donation to Autism $100.00 USD</option>
+                                        <option value="Ticket & Large Donation to Autism">Ticket & Large Donation to Autism $150.00 USD</option>
+                                        <option value="Only a Donation to Autism">Only a Donation to Autism $50.00 USD</option>
+                                    </select>
+
+                                    <input type="hidden" name="currency_code" value="USD">
+                                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+
                         </form>
                     </div>
 
