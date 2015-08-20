@@ -1,0 +1,21 @@
+{
+  "name": "UnMasqd",
+  "version": "1.0.0",
+  "homepage": "snickdx.github.io/unmasqd",
+  "authors": [
+    "Snickdx <snickdx@gmail.com>"
+  ],
+  "description": "Un Masqd Event Page",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
